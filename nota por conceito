@@ -1,0 +1,28 @@
+algoritmo "NotaPorConceito"
+
+var
+  media: real
+  nota1: real
+  nota2: real
+
+inicio
+
+  escreval(":Digite sua nota: ")
+  leia (nota1)
+  escreval("Digite sua nota2: ")
+  leia (nota2)
+
+  media <- (nota1 + nota2) / 2
+  se media >= 9.0 entao
+    escreval ("Conceito A")
+  senao
+    se media >= 7.0 entao
+      escreval ("Conceito B")
+    senao
+      se media >= 5.0 entao
+        escreva ("Conceito C")
+      fimse
+    fimse
+  fimse
+
+fimalgoritmo
