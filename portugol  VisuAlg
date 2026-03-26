@@ -1,0 +1,31 @@
+algoritmo "SimuladorLogin"
+
+var
+    login_digitado: caractere
+    senha_digitada: caractere
+    USUARIO: caractere
+    SENHA: caractere
+    
+inicio
+    USUARIO <- "GuiRyuki"
+    SENHA <- "ryuki123"
+
+    escreval ("Seu nome de usuario: ")
+    leia (login_digitado)
+    escreval ("Digite sua senha: ")
+    leia (senha_digitada)
+
+    se (login_digitado = USUARIO) e (senha_digitada = SENHA) entao
+        escreval ("Bem vindo Usuario!")   
+    senao
+        se (login_digitado <> USUARIO) e (senha_digitada = SENHA) entao
+            escreval ("Usuario incorreto!")
+        senao
+            se (login_digitado = USUARIO) e (senha_digitada <> SENHA ) entao
+                escreval ("Senha incorreta!")
+                senao
+                escreval ("Usuario e senha incorretos!")
+            fimse
+        fimse
+    fimse        
+fimalgoritmo
