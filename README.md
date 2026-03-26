@@ -1,1 +1,3 @@
-# sistemas-jogos-educacionais
+# treinando-programaçao
+# entendendo-logica
+# portugol
