@@ -1,0 +1,76 @@
+Exercício – Banco de Dados Hospitalar
+
+Um hospital deseja informatizar o controle de pacientes, médicos, especialidades, consultas, exames e internações.
+
+O sistema deve permitir registrar:
+
+pacientes atendidos pelo hospital;
+médicos e suas especialidades;
+consultas realizadas entre médicos e pacientes;
+exames solicitados nas consultas;
+internações dos pacientes;
+valores das consultas e exames.
+Parte 1 – Modelagem
+
+Crie o DER considerando as seguintes regras:
+
+Um paciente pode realizar várias consultas.
+Uma consulta pertence a apenas um paciente.
+Um médico pode realizar várias consultas.
+Uma consulta é realizada por apenas um médico.
+Um médico pertence a uma especialidade.
+Uma consulta pode solicitar vários exames.
+Um exame pode ser solicitado em várias consultas.
+Um paciente pode ter nenhuma, uma ou várias internações.
+Parte 2 – Criação do banco de dados
+
+Crie o banco de dados chamado:
+
+HospitalDB;
+
+Crie as tabelas:
+
+Paciente
+Especialidade
+Medico
+Consulta
+Exame
+Consulta_Exame
+Internacao
+
+As tabelas devem conter chave primária, chave estrangeira e tipos de dados adequados.
+
+Parte 3 – Inserção de dados
+
+Insira pelo menos:
+
+5 pacientes;
+4 especialidades;
+5 médicos;
+8 consultas;
+5 exames;
+10 registros relacionando consultas e exames;
+3 internações.
+Parte 4 – Consultas SQL
+
+Elabore os comandos SQL para responder:
+
+Liste o nome dos pacientes e a data de suas consultas.
+Liste o nome do paciente, o nome do médico e a especialidade da consulta.
+Liste todas as consultas, exibindo também os pacientes, mesmo que algum paciente ainda não tenha consulta.
+Liste os exames solicitados em cada consulta, mostrando:
+nome do paciente;
+nome do médico;
+nome do exame;
+valor do exame.
+Mostre o total gasto por cada paciente em exames.
+Mostre a quantidade de consultas realizadas por cada médico.
+Mostre os pacientes que já foram internados.
+Mostre os pacientes que nunca foram internados.
+Liste os médicos que realizaram mais de 2 consultas.
+Mostre os pacientes que gastaram em exames mais do que a média geral dos valores dos exames.
+Liste as consultas cujo valor seja maior que a média dos valores das consultas.
+Mostre o total arrecadado pelo hospital com consultas, agrupado por especialidade médica.
+Liste os pacientes que fizeram consulta com médicos da especialidade “Cardiologia”.
+Mostre a maior data de internação registrada.
+Liste o paciente, a data de entrada e a data de saída das internações, ordenando pela data de entrada mais recente.
